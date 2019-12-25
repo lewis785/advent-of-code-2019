@@ -19,9 +19,9 @@ def calculate(layer_values, layer_size):
 
 def main():
     with open('input.txt') as inputFile:
-        values = list(inputFile.readline().rstrip('\n'))
+        layer_values = list(inputFile.readline().rstrip('\n'))
 
-    print (calculate(values, image_size(25, 6)))
+    print (calculate(layer_values, image_size(25, 6)))
 
 
 if __name__ == '__main__':
